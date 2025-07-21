@@ -18,6 +18,9 @@ body {
 header {
     grid-area: header;
 }
+.dashboard-icon {
+  color: white;
+}
 
 aside {
     grid-area: aside;
@@ -27,4 +30,5 @@ aside {
 
 main {
     grid-area: main;
+    background-color: rgb(220, 220, 220);
 }
