@@ -13,23 +13,40 @@
 
 <body>
     <header>
-        <div class="searchbar">
-            <form>
-                <button type="submit">🔍</button>
-                <input type="search">
-            </form>
-        </div>
-        <div class="profile">
-            <button type="button">
-                <img src="assets/bell.svg" alt="Bell Icon"
-                width="30" height="25">
-            </button>
-            <div class="avatar">
-                <img src="assets/avatar.svg" alt="Avatar Icon">
+        <div class="header-wrapper">
+            <!-- Erste Reihe -->
+            <div class="header-row header-row-top">
+                <div class="searchbar">
+                    <form>
+                        <button type="submit">🔍</button>
+                        <input type="search">
+                    </form>
+                </div>
+                <div class="header-right">
+                    <button type="button">
+                        <img src="assets/bell.svg" alt="Bell Icon"
+                        width="30" height="25">
+                    </button>
+                    <div class="avatar">
+                        <img src="assets/avatar.svg" alt="Avatar Icon" width="40" height="40">
+                    </div>
+                    <span class="profile-name">Taylor Green</span>
+                </div>
             </div>
-            <span class="profile-name">Taylor Green</span>
+            
+            <!-- Zweite Reihe -->
+            <div class="header-row header-row-bottom">
+                <div class="greeting">
+                    <h2>Hi there,</h2>
+                    <h1>Taylor Green (@tgreen)</h1>
+                </div>
+                <div class="action-buttons">
+                    <button class="btn-primary">New</button>
+                    <button class="btn-primary">Upload</button>
+                    <button class="btn-primary">Share</button>
+                </div>
+            </div>
         </div>
-        <div class="action buttons"></div>
     </header>
     <aside>
         <div class="icon">

@@ -18,9 +18,58 @@ body {
 header {
     grid-area: header;
     margin: 10px;
+    padding: 10px 20px;
+}
+
+.header-wrapper {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    gap: 15px;
+}
+
+.header-row {
+    display: flex;
+    align-items: flex-end;
     justify-content: space-between;
+}
+
+.greeting h2 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.greeting h1 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.greeting {
+    margin-left: 30px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-primary {
+    background-color: rgb(123, 158, 123);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: rgb(103, 138, 103);
 }
 
 .header-right {
@@ -122,4 +171,47 @@ aside p {
 main {
     grid-area: main;
     background-color: rgb(220, 220, 220);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 250px;
+    grid-template-rows: repeat(3, 1fr); 
+    gap: 20px;
+    overflow-y: auto;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid rgb(123, 158, 123);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+.card:nth-child(7) {
+    grid-column: 3; 
+    grid-row: 1; 
+}
+
+.card:nth-child(8) {
+    grid-column: 3; 
+    grid-row: 2;
 }
